@@ -1,0 +1,30 @@
+
+Name: Hetul Patel & Anuj Pradeep
+ID: 1571187 & 1578030
+CMPUT 275, Winter 2020
+
+Final Project
+
+Included Files: 
+	*finalproject.cpp
+	*constants_and_headers.h
+	*proc_mechanics.cpp
+	*proc_mechanics.h
+	*tic_tac_toe.cpp
+	*tic_tac_toe.h
+	*sudoku.cpp
+	*sudoku.h
+	*maze.cpp
+	*maze.h
+	*README
+	*Makefile
+
+Accessories: 
+	*In order to run this program, you will need your Arduino board, and the tft display. Simply hook up your tft display by inserting the side with the few pins into pins A5 to RESET, and the side with more pins to pins AREF to 0->RX. Then simply plug it into your computer.
+
+Instructions: 
+	*Move to the directory in which the files are located and then type "make" into the terminal and press enter. After that type "make upload" and the program should load onto the arduino and thats it. We recommend starting off by reading the rules section.
+	
+	With this project we started with Sudoku, we created an algorithm which solves sudoku boards and that is whats used to solve the board which is selected before playing the game. We implented everything onto the tft display without the need for external sources of input like joysticks and number pads. This was one of the more tideous things but overall the game runs very smooth.
+	Next was tic tac toe, this was very simple and straight forward. One thing is the inorder to account for misclicks and such, we allow players to override already clicked boxes. We knew how to prevent this but we kept this measure to make the game a bit less irritating. Other than that spec decision the game runs great.
+	The hardest part of the lab was the maze. Implementing a 10x10 maze onto a tft board was extremely tough. We ended up just rescaling it to 100x100 but you can clearly see that its still very small. The maze although small still runs as we needed. We also created an algorithm that solved mazes but that was on desktop and couldnt implement it cleanly with the arduino library. 
